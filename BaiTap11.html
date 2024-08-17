@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Structure</title>
+    <style>
+        *:hover { 
+            outline: 5px solid rgb(255,0,0); 
+        }
+
+        section, header, hgroup, footer, nav, article, aside, figure, figcaption {
+            border: 1px solid rgb(255,255,255);
+            background-color: rgba(153,153,153,.25);
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        section, aside {
+            float: left;
+        }
+
+        header, footer {
+            clear: both;
+        }
+
+        #pagecontent {
+            margin: 0 auto;
+            max-width: 1045px;
+            min-width: 480px;
+            width: 100%;
+        }
+
+        #pageheader, #pagefooter { 
+            max-width: 1020px;
+            min-width: 480px;
+            width: 100%;
+        }
+
+        #sectioncontent1 {
+            max-width: 600px;
+            min-width: 400px;
+            width: 100%;
+        }
+
+        #asidecontent1 {
+            max-width: 400px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="pagecontent">
+
+        <header id="pageheader">
+            <hgroup id="pagehgroup">
+                <h1 class="sitename"><a href="/" rel="home" title="Home">HTML5 Structure</a></h1>
+
+                <h1 class="subtitle">
+                    <img src="images/logoUEH.jpg" alt="logo UEH" style="width: 10%; float: left;">
+                    <h1 style="color: #015593;"><u>KHOA CÔNG NGHỆ THÔNG TIN KINH DOANH</u></h1>
+                    <h2 style="color: #015593;">School of Business Information Technology</h2>
+                </h1>
+            </hgroup>
+
+            <nav id="globalnav" style="text-align: center; padding: 20px; ">
+                <a href="#">Chương trình đại học</a>
+                <a href="#">Chương trình liên thông đại học</a>
+                <a href="#">Chương trình sau đại học</a>
+                <a href="#">Chương trình quốc tế</a>
+            </nav>
+        </header>
+
+        <section id="sectioncontent1">
+            <header id="sectionheader1">
+                <h2>Chương trình đại học</h2>
+            </header>
+
+            <article id="articlecontent1">
+                <header id="articleheader1">
+                    <a href="yourlink"><h3>Hệ thống hoạch định nguồn lực doanh nghiệp (ERP)</h3></a>
+                </header>
+                <p>Nhu cầu xã hội Hoạch định các nguồn lực một cách hiệu quả để nhằm đến mục tiêu giảm chi phí, tăng sức cạnh tranh là một vấn đề mà mọi doanh nghiệp luôn phải đối mặt, nhất là trong thời kỳ hội nhập hiện nay. Hệ thống hoạch định nguồn lực doanh nghiệp (ERP) [...]</p>
+                <figure id="figure1">
+                    <p>
+                        <img src="picture.jpg" alt="ERP diagram">
+                    </p>
+                    <figcaption>ERP diagram</figcaption>
+                </figure>
+                <footer id="articlefooter1">
+                    <p>Article footer</p>
+                </footer>
+            </article>
+        </section>
+
+        <aside id="asidecontent1">
+            <header>
+                <h2>Liên kết</h2>
+            </header>
+
+            <article>
+                <header>
+                    <a href="yourlink"><h3>Hệ thống thông tin kinh doanh</h3></a>
+                </header>
+                <p>
+                    <img src="picture.jpg" alt="Business IT picture">
+                </p>
+                <footer>
+                    <p>Nhu cầu xã hội Hiện nay, ứng dụng công nghệ trong điều hành doanh nghiệp đang được các nhà quản trị quan tâm...</p>
+                </footer>
+            </article>
+
+            <footer>
+                <p>Aside footer</p>
+            </footer>
+        </aside>
+
+        <footer id="pagefooter">
+            <p>Page Footer</p>
+        </footer>
+    </div>
+</body>
+</html>

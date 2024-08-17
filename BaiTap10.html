@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Structure</title>
+    <style>
+        *:hover { 
+            outline: 5px solid rgb(255,0,0); 
+        }
+
+        section, header, hgroup, footer, nav, article, aside, figure, figcaption {
+            border: 1px solid rgb(255,255,255);
+            background-color: rgba(153,153,153,.25);
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        section, aside {
+            float: left;
+        }
+
+        header, footer {
+            clear: both;
+        }
+
+        #pagecontent {
+            margin: 0 auto;
+            max-width: 1045px;
+            min-width: 480px;
+            width: 100%;
+        }
+
+        #pageheader, #pagefooter { 
+            max-width: 1020px;
+            min-width: 480px;
+            width: 100%;
+        }
+
+        #sectioncontent1 {
+            max-width: 600px;
+            min-width: 400px;
+            width: 100%;
+        }
+
+        #asidecontent1 {
+            max-width: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="pagecontent">
+
+        <header id="pageheader">
+            <hgroup id="pagehgroup">
+                <h1 class="sitename"><a href="/" rel="home" title="Home">HTML5 Structure</a></h1>
+                <h2 class="subtitle">Page Header</h2>
+            </hgroup>
+
+            <nav id="globalnav">
+                <p>Navigation</p>
+            </nav>
+        </header>
+
+        <section id="sectioncontent1">
+            <header id="sectionheader1">
+                <h2>Section Header</h2>
+            </header>
+
+            <article id="articlecontent1">
+                <header id="articleheader1">
+                    <h3>Article Header</h3>
+                </header>
+                <p>Article content</p>
+                <figure id="figure1">
+                    <p>Figure</p>
+                    <figcaption>Figure Caption</figcaption>
+                </figure>
+                <footer id="articlefooter1">
+                    <p>Article footer</p>
+                </footer>
+            </article>
+
+            <article>
+                <header id="articleheader2">
+                    <h3>Article Header</h3>
+                </header>
+                <p>Article content</p>
+                <figure id="figure2">
+                    <p>Figure</p>
+                    <figcaption>Figure Caption</figcaption>
+                </figure>
+                <footer id="articlefooter2">
+                    <p>Article footer</p>
+                </footer>
+            </article>
+
+            <footer id="sectionfooter1">
+                <p>Section Footer</p>
+            </footer>
+        </section>
+
+        <aside id="asidecontent1">
+            <header>
+                <h2>Aside Header</h2>
+            </header>
+
+            <article>
+                <header>
+                    <h3>Aside Article Header</h3>
+                </header>
+                <p>Aside Article Content</p>
+                <footer>
+                    <p>Aside Article footer</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Aside Article Header</h3>
+                </header>
+                <p>Aside Article Content</p>
+                <footer>
+                    <p>Aside Article footer</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Aside Article Header</h3>
+                </header>
+                <p>Aside Article Content</p>
+                <footer>
+                    <p>Aside Article footer</p>
+                </footer>
+            </article>
+
+            <footer>
+                <p>Aside footer</p>
+            </footer>
+        </aside>
+
+        <footer id="pagefooter">
+            <p>Page Footer</p>
+        </footer>
+    </div>
+</body>
+</html>
